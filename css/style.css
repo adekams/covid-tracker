@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0,.7), rgba(0, 0, 0,.7)), url('https://miro.medium.com/max/4380/1*2J1YRGI9VhWVcUlAVXLImA.jpeg') no-repeat fixed;
+    background-size: auto;
+    color: #fff;
+
+}
+
+.loader {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.loader div {
+    width: 100px;
+    height: 100px;
+    border: 10px solid transparent;
+    border-top-color: teal;
+    border-left-color: teal;
+    border-bottom-color: teal;
+    border-radius: 50%;
+    animation: circular 5s linear infinite;
+}
+
+@keyframes circular {
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
